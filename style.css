@@ -1,0 +1,157 @@
+body {
+    background-color: rgb(15, 70, 178);;
+    margin: 0px;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5;
+      letter-spacing: 0.00938em;
+      color: rgba(0, 0, 0, 0.87);
+      justify-content: start;
+      align-self: start;
+      height: 100vh;
+  }
+  
+
+  .text-name{
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    top: 0px;
+
+
+}
+  
+  .container {
+    border-radius: 4px;
+    box-sizing: inherit;
+    position: relative;
+  }
+  
+
+  div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+  .card {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    
+
+  }
+  
+  .logo {
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 80px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  
+  .logo span {
+    color: #007bff;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .logo-image {
+    padding-top: 20px; /* Add top padding */
+    height: auto; /* Set to auto to maintain aspect ratio */
+    width: auto; /* Set to auto to maintain aspect ratio */
+    max-width: 148px; /* Limit max-width to original width */
+    max-height: 70px; /* Limit max-height to original height */
+    image-rendering: crisp-edges; /* Ensure sharp edges */
+    object-fit: contain;
+  }
+
+
+  /* Media Queries */
+/* Media Queries */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.25rem; /* Slightly smaller font size for tablets */
+    }
+
+    .container {
+        width: 95%; /* Increase width for better use of space */
+        max-width: 100%; /* Increase width for better use of space */
+        
+    }
+
+    .card {
+        margin: auto; /* Center the card horizontally */
+        
+    }
+
+    .logo {
+        padding: 4vh 2%; /* Reduce vertical padding */
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+        
+        
+    }
+
+    .title {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .card {
+         /* Reduce padding in the card */
+        margin: 0 auto; /* Center the card horizontally */
+        max-width: 80%;
+    }
+
+    .logo {
+        padding: 3vh 2%; /* Further reduce padding */
+    }
+
+    .logo-image {
+        max-height: 50px; /* Reduce max height for smaller screens */
+    }
+}
